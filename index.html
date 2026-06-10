@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Información completa sobre privacidad digital, derechos ARCO, Ley Olimpia, protección en redes sociales y marco legal en México. Datos actualizados IFT, INAI y casos reales.">
+    <meta name="keywords" content="privacidad digital, derechos ARCO, ley olimpia, proteccion de datos Mexico, INAI, ciberseguridad, redes sociales">
+    <title>Privacidad Digital MX | Info Legal + Protección en Redes</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f7fc;
+            color: #1a2c3e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(125deg, #0b2b3b 0%, #123e52 100%);
+            color: white;
+            padding: 3rem 0 3.5rem;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.8rem;
+        }
+
+        .hero h1 i {
+            color: #5ee0fa;
+            margin-right: 12px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-legal {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 800;
+            margin: 2rem 0 1rem 0;
+            border-left: 6px solid #1f7f8c;
+            padding-left: 1rem;
+            color: #0f2e3a;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 1.8rem;
+            margin: 1.8rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 32px -16px rgba(0, 48, 73, 0.15);
+        }
+
+        .card-icon {
+            font-size: 2.3rem;
+            color: #1f7f8c;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilos para contenedores de imagen */
+        .img-placeholder {
+            background: #eef2f5;
+            border: 2px dashed #1f7f8c;
+            border-radius: 1.2rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .img-placeholder img {
+            max-width: 100%;
+            border-radius: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .img-placeholder p {
+            color: #1f7f8c;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+        .img-circle-bg {
+            background: #ffffffcc;
+            backdrop-filter: blur(2px);
+        }
+        .hero-img {
+            max-width: 100%;
+            border-radius: 1.5rem;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+            margin-top: 1rem;
+        }
+        .legal-box {
+            background: #eef2f5;
+            border-radius: 1.2rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 5px solid #c44536;
+        }
+        .dato-impacto {
+            background: linear-gradient(112deg, #fef5e8 0%, #fff6e8 100%);
+            border-radius: 1.5rem;
+            padding: 1.8rem;
+            margin: 1.8rem 0;
+        }
+        .referencias {
+            background: #ffffffdb;
+            backdrop-filter: blur(2px);
+            border-radius: 1.2rem;
+            padding: 1.6rem;
+            margin: 2rem 0 3rem;
+            border: 1px solid #dce5ec;
+        }
+        .referencias a, .legal-box a {
+            color: #1a6b79;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #1a6b79;
+        }
+        footer {
+            background: #0c2a35;
+            color: #bdd3df;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 2rem 2rem 0 0;
+            margin-top: 2rem;
+        }
+        .btn-top {
+            position: fixed;
+            bottom: 1.8rem;
+            right: 1.8rem;
+            background: #1f7f8c;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+            z-index: 99;
+        }
+        .btn-top:hover {
+            background: #0d5c66;
+            transform: scale(1.05);
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        table th, table td {
+            padding: 12px 8px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        table tr:hover {
+            background: #f1f9ff;
+        }
+        thead {
+            background: #1f7f8c;
+            color: white;
+        }
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 1.9rem; }
+            .section-title { font-size: 1.6rem; }
+            .container { padding: 0 18px; }
+        }
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #bdd3df, transparent);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="container">
+        <div class="badge-legal"><i class="fas fa-gavel"></i> Marco legal México · ARCO · IFT · Ley Olimpia</div>
+        <h1><i class="fas fa-lock"></i> Privacidad Digital</h1>
+        <p>El control real sobre tus datos en internet: desde redes sociales hasta tus derechos legales. Infórmate, protégete y actúa.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px;">
+            <span><i class="fas fa-check-circle"></i> Robo de identidad</span>
+            <span><i class="fas fa-check-circle"></i> Sanciones legales</span>
+            <span><i class="fas fa-check-circle"></i> Derechos ARCO</span>
+            <span><i class="fas fa-check-circle"></i> Ley Olimpia</span>
+        </div>
+        <!-- ESPACIO PARA IMAGEN EN HERO -->
+        <div class="img-placeholder" style="background: rgba(255,255,255,0.1); border-color: #5ee0fa; margin-top: 1.5rem;">
+            <p><img src="img/hackeo-redes-sociales.jpg" alt="Descripción de la imagen" style="width:100%; border-radius:1rem;"></p>
+            <div style="height: 200px; align-items: center; justify-content: center; color: white;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section-title"><i class="fas fa-user-secret"></i> ¿Qué es la privacidad digital?</div>
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Definición clave</h3>
+            <p>Es el derecho de los usuarios a decidir <strong>cómo se recopila, usa y comparte</strong> su información personal.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Tipos principales</h3>
+            <ul><li>Privacidad de información</li><li>Privacidad de comunicaciones</li><li>Privacidad individual</li></ul>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Control digital</h3>
+            <p>Autonomía informativa en el mundo online.</p>
+        </div>
+    </div>
+    <div class="img-placeholder">
+        <p><img src="img/a.png" alt="Descripción de la imagen" style="width:60%; border-radius:1rem;"></p>
+        <div style="height: 50px; background: #fff; border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: #1f7f8c;">
+        </div>
+    </div>
+
+    <!-- SECCIÓN 2: Riesgos + imagen lateral -->
+    <div class="section-title"><i class="fas fa-bell"></i> ⚠️ Riesgos en redes sociales</div>
+    <div class="card-grid">
+        <div class="card"><i class="fas fa-virus"></i> <h3>Malware</h3><p>Archivos fraudulentos.</p></div>
+        <div class="card"><i class="fas fa-comment-dots"></i> <h3>Ciberbullying</h3><p>Hostigamiento digital.</p></div>
+        <div class="card"><i class="fas fa-id-card"></i> <h3>Robo de identidad</h3><p>Suplantación.</p></div>
+        <div class="card"><i class="fas fa-fish"></i> <h3>Phishing</h3><p>Mensajes falsos.</p></div>
+        <div class="card"><i class="fas fa-brain"></i> <h3>Adicción digital</h3><p>Ansiedad y pérdida de bienestar.</p></div>
+    </div>
+    <div class="img-placeholder">
+        <p><img src="img/2.jpg" alt="Descripción de la imagen" style="width:100%; border-radius:1rem;"></p>
+    </div>
+
+    <!-- SECCIÓN 3: Cómo protegerte + imagen de checklist -->
+    <div class="section-title"><i class="fas fa-shield-virus"></i> 🛡️ Cómo protegerte en redes</div>
+    <div class="card-grid">
+        <div class="card"><i class="fas fa-sliders-h"></i> <h3>Configura privacidad</h3><p>Revisa cada 3 meses.</p></div>
+        <div class="card"><i class="fas fa-key"></i> <h3>Contraseñas + 2FA</h3><p>Autenticación en dos pasos.</p></div>
+        <div class="card"><i class="fas fa-eye-slash"></i> <h3>No compartas datos sensibles</h3><p>INE, tarjetas, dirección.</p></div>
+    </div>
+    <div class="img-placeholder">
+        <p><img src="img/jiuan.jpg" alt="Descripción de la imagen" style="width:100%; border-radius:1rem;"></p>
+    </div>
+
+    <div class="section-title"><i class="fas fa-balance-scale"></i> ⚖️ Marco legal mexicano</div>
+    <div class="legal-box">
+        <h3>LFPDPPP + Derechos ARCO</h3>
+        <p>Acceso, Rectificación, Cancelación, Oposición. Plazos y multas.</p>
+    </div>
+    <div class="legal-box" style="background: #e6f0f5; border-left-color: #1f7f8c;">
+        <h3>Otras leyes: Ley Olimpia, Código Penal, NOM-024</h3>
+        <p>Penas de 3 a 6 años por violencia digital.</p>
+    </div>
+    <div class="img-placeholder">
+        <p><img src="img/riesgos.png" alt="Descripción de la imagen" style="width:100%; border-radius:1rem;"></p>
+    </div>
+
+    <!-- DATOS IMPACTANTES -->
+    <div class="section-title"><i class="fas fa-chart-simple"></i> 📊 Datos impactantes</div>
+    <div class="dato-impacto">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1rem;">
+            <div><strong>84%</strong><br>usan redes sociales diario</div>
+            <div><strong>67%</strong><br>nunca revisa configuración privacidad</div>
+            <div><strong>1 de cada 3</strong><br>adolescentes ha sufrido ciberacoso</div>
+            <div><strong>$12M MXN</strong><br>multa a Rappi en 2023</div>
+        </div>
+        <hr>
+       <div class="img-placeholder" style="background: #fff2e0; text-align: center; padding: 1.5rem;">
+    <img src="img/grafica.jpg" alt="Gráfica vertical sobre privacidad digital en México" 
+         style="max-width: 100%; width: auto; height: auto; max-height: 450px; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #2c5a6e;">
+        <i class="fas fa-chart-line"></i> <strong>Figura:</strong> Estadísticas de phishing y robo de identidad en México (Fuente: IFT 2024)
+    </p>
+</div>
+    </div>
+
+    <!-- Casos reales + imagen -->
+    <div class="section-title"><i class="fas fa-briefcase"></i> 📁 Casos reales</div>
+    <div class="card-grid">
+        <div class="card"><h3>Rappi vs INAI</h3><p>Multa $12.4M por filtrar datos de repartidores.</p></div>
+        <div class="card"><h3>Google Classroom</h3><p>Escuelas compartieron datos sin consentimiento.</p></div>
+        <div class="card"><h3>Fofo Márquez</h3><p>Procesado por Ley Olimpia, 4 años de prisión.</p></div>
+    </div>
+
+        <div style="height: 150px; background: #f4f7fc; border-radius: 1rem; display: flex; align-items: center; justify-content: center;"><i class="fas fa-search" style="font-size: 2rem;"></i> <span>Ejemplo: recorte de periódico sobre multa a Rappi</span></div>
+
+    <!-- Guía ARCO paso a paso -->
+    <div class="section-title"><i class="fas fa-file-alt"></i> 📝 ¿Cómo ejercer tus derechos ARCO?</div>
+    <div class="legal-box" style="background: #f0f6ea;">
+        <ol><li>Identifica al responsable</li><li>Redacta solicitud</li><li>Envía a INAI o empresa</li><li>Plazo máximo 20 días hábiles</li><li>Recurso de revisión si niegan</li></ol>
+        <p><strong>Formato oficial:</strong> portal INAI.</p>
+    </div>
+
+    <!-- Herramientas gratuitas -->
+    <div class="section-title"><i class="fas fa-tools"></i> 🔍 Herramientas gratuitas</div>
+    <div class="card-grid">
+        <div class="card"><i class="fab fa-google"></i> <h3>Have I Been Pwned?</h3><p>Verifica filtraciones.</p></div>
+        <div class="card"><i class="fab fa-facebook"></i> <h3>Off-Facebook Activity</h3><p>Borra historial compartido.</p></div>
+        <div class="card"><i class="fas fa-user-secret"></i> <h3>Privacy Checker (X)</h3><p>Desactiva datos comerciales.</p></div>
+    </div>
+
+    <!-- Tabla comparativa + imagen opcional -->
+    <div class="section-title"><i class="fas fa-chart-simple"></i> 📱 Privacidad en redes: comparativa</div>
+    <div class="table-wrapper">
+        <table>
+            <thead><tr><th>Plataforma</th><th>Recopilación datos</th><th>Puntaje</th></tr></thead>
+            <tbody>
+                <tr><td>Instagram</td><td>Ubicación, mensajes</td><td>⭐ 2.5</td></tr>
+                <tr><td>Facebook</td><td>Historial web, compras</td><td>⭐ 2.0</td></tr>
+                <tr><td>X (Twitter)</td><td>Interacción</td><td>⭐ 3.5</td></tr>
+                <tr><td>Signal</td><td>Solo número</td><td>⭐ 4.8</td></tr>
+            </tbody>
+        </table>
+
+    <!-- REFERENCIAS -->
+    <div class="section-title"><i class="fas fa-book-open"></i> 📚 Referencias</div>
+    <div class="referencias">
+        <ul><li>🔹 INAI. Guía ARCO 2025. <a href="#">https://home.inai.org.mx</a></li>
+        <li>🔹 IFT. Informe privacidad 2024. <a href="#">https://www.ift.org.mx</a></li>
+        <li>🔹 Ley Olimpia. Cámara de Diputados.</li>
+        <li>🔹 UNESCO. Violencia digital adolescente 2024.</li></ul>
+    </div>
+
+
+<footer>
+    <div class="container">
+        <i class="fas fa-shield-haltered"></i> Privacidad Digital MX — <strong>#ProtegeTusDatos</strong><br>
+        &copy; 2025 - Campaña de concientización.
+    </div>
+</footer>
+
+<a href="#" class="btn-top"><i class="fas fa-chevron-up"></i></a>
+
+<script>
+    document.querySelector('.btn-top')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.querySelectorAll('.referencias a, .legal-box a').forEach(link => {
+        if(!link.target) link.setAttribute('target', '_blank');
+    });
+</script>
+</body>
+</html>
